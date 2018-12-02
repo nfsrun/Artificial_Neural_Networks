@@ -15,7 +15,7 @@ public class ANNClassifier {
 
     private double[][] outputLayer, hiddenLayer;
 
-    private int hiddenLayerNodeCount = 32, epochMax = 13;
+    private int hiddenLayerNodeCount = 33, epochMax = 16;
 
     public ANNClassifier(String test_path, String train_path, int trainCount) {
         this.test_path = test_path;
@@ -23,7 +23,7 @@ public class ANNClassifier {
         this.rand = new Random();
 
         //auto populate with best solution and default train/test file(s).
-        train(trainCount, true);
+        train(trainCount, false);
     }
 
     public ANNClassifier(String test_path) {

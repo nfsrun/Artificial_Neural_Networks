@@ -28,7 +28,7 @@ public class Program {
         String test_path = System.getProperty("user.dir") +
                 "\\test_files\\mnist_test.csv";
         String out_path = System.getProperty("user.dir") +
-                "\\results.csv";
+                "\\results33_19.csv";
 
         try {
             for(int index = 0; index < sizes.length; index++)
